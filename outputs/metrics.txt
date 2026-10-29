@@ -1,0 +1,8 @@
+Semilla: 68
+Mejor Val Acc: 0.7666
+Test Loss: 0.7044
+Test Acc: 0.7559
+Train Loss final: 0.7075
+Train Acc final: 0.7511
+Val Loss final: 0.6814
+Val Acc final: 0.7647
