@@ -1,9 +1,8 @@
-# Evaluación de la Segunda Unidad IA — Clasificación CIFAR-10 con CNN
+# Evaluación de la Segunda Unidad — Clasificación CIFAR-10 con CNN
 
 **Universidad Andina del Cusco**  
-**Departamento Académico de Ingeniería de Sistemas**
 
-## Datos del estudiante
+## Datos 
 
 - **Estudiante:** Kelma Ivonne Leva Ayte
 - **Código de matrícula:** 016100868f
@@ -137,8 +136,6 @@ En `src/train.py` se implementa el ciclo completo:
 
 ### Análisis Crítico de las Métricas (Semilla 68)
 
-![Curvas de aprendizaje](outputs/loss_accuracy.png)
-
 - **Accuracy final de entrenamiento:** `0.7511`
 - **Accuracy final de validación:** `0.7647`
 - **Accuracy en Test:** `0.7559`
@@ -151,6 +148,8 @@ Al analizar las métricas, observamos un comportamiento sumamente saludable: el 
 Esto indica que el modelo **no presenta síntomas de overfitting** (sobreajuste), ya que no hay una brecha negativa entre entrenamiento y validación, y las curvas de *Loss* descienden de forma paralela y estable. Tampoco hay síntomas de *underfitting* (subajuste), ya que el modelo logra aprender y superar ampliamente el rendimiento de un clasificador aleatorio (10%), alcanzando un **75.59% de precisión en el conjunto de Test**.
 
 Por otro lado, la **matriz de confusión** evidencia que las clases con mayor tasa de acierto son `ship` y `automobile`, mientras que las confusiones más frecuentes ocurren entre clases visualmente similares, como `cat` y `dog` o `deer` y `horse`, lo cual es completamente esperado en imágenes de baja resolución (32x32).
+
+![Curvas de aprendizaje](outputs/loss_accuracy.png)
 
 ![Matriz de confusión](outputs/confusion_matrix.png)
 
